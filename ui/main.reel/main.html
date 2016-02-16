@@ -9,12 +9,34 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "button": {
+            "prototype": "matte/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Button",
+                "type": "button"
+            }
+        },
+        "video": {
+            "prototype": "matte/ui/video-player.reel",
+            "properties": {
+                "element": {"#": "video"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Main">
+        <video data-montage-id="video"></video>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
