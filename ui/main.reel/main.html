@@ -16,17 +16,6 @@
                 "draggable": "true"
             }
         },
-        "button": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "element": {"#": "button"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "enabled": true,
-                "label": "Button"
-            }
-        },
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
@@ -39,53 +28,25 @@
         "listItem": {
             "prototype": "digit/ui/list-item.reel",
             "properties": {
-                "element": {"#": "listItem"}
+                "element": {"#": "listItem"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "highlight": "wqewq"
             }
         },
         "listItem2": {
             "prototype": "digit/ui/list-item.reel",
             "properties": {
-                "element": {"#": "listItem2"}
+                "element": {"#": "listItem2"},
+                "highlight": "wqeqweqw"
             }
         },
         "listItem3": {
             "prototype": "digit/ui/list-item.reel",
             "properties": {
-                "element": {"#": "listItem3"}
-            }
-        },
-        "number": {
-            "prototype": "digit/ui/number-field.reel",
-            "properties": {
-                "element": {"#": "number"},
-                "value": 100
-            }
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "placeholderValue": "Text"
-            }
-        },
-        "textField2": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField2"},
-                "placeholderValue": "Text"
-            }
-        },
-        "title": {
-            "prototype": "digit/ui/title.reel",
-            "properties": {
-                "element": {"#": "title"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": "Login page"
+                "element": {"#": "listItem3"},
+                "highlight": "123123"
             }
         }
     }
@@ -93,19 +54,15 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title"></h1>
-        <input data-montage-id="textField" type="text">
-        <input data-montage-id="textField2" type="text">
-        <input type="number" data-montage-id="number">
-        <button data-montage-id="button"></button>
         <ul data-montage-id="list">
             <li data-montage-id="listItem">
-                <li data-montage-id="listItem3"></li>
+
+            </li>
+            <li data-montage-id="listItem3">
                 <li data-montage-id="listItem2">
 
                 </li>
             </li>
-            <li></li>
         </ul>
     </div>
 </body>
