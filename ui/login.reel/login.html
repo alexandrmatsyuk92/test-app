@@ -9,12 +9,53 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "button": {
+            "prototype": "matte/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Button",
+                "type": "button"
+            }
+        },
+        "inputText": {
+            "prototype": "matte/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "inputText"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
+        },
+        "inputText2": {
+            "prototype": "matte/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "inputText2"},
+                "value": "Text"
+            }
+        },
+        "toggleSwitch": {
+            "prototype": "matte/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "toggleSwitch"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Login">
+        <div data-montage-id="toggleSwitch"></div>
+        <input data-montage-id="inputText" type="text">
+        <input data-montage-id="inputText2" type="text">
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
