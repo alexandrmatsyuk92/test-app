@@ -16,37 +16,44 @@
                 "draggable": "true"
             }
         },
-        "list": {
-            "prototype": "digit/ui/list.reel",
+        "button": {
+            "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "list"},
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "select": {
+            "prototype": "digit/ui/select.reel",
+            "properties": {
+                "element": {"#": "select"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
             }
         },
-        "listItem": {
-            "prototype": "digit/ui/list-item.reel",
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
             "properties": {
-                "element": {"#": "listItem"},
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
-                "highlight": "wqewq"
-            }
-        },
-        "listItem2": {
-            "prototype": "digit/ui/list-item.reel",
-            "properties": {
-                "element": {"#": "listItem2"},
-                "highlight": "wqeqweqw"
-            }
-        },
-        "listItem3": {
-            "prototype": "digit/ui/list-item.reel",
-            "properties": {
-                "element": {"#": "listItem3"},
-                "highlight": "123123"
+                "value": "Login page"
             }
         }
     }
@@ -54,16 +61,14 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <ul data-montage-id="list">
-            <li data-montage-id="listItem">
-
-            </li>
-            <li data-montage-id="listItem3">
-                <li data-montage-id="listItem2">
-
-                </li>
-            </li>
-        </ul>
+        <h1 data-montage-id="title"></h1>
+        <button data-montage-id="button"></button>
+        <select data-montage-id="select">
+            <option value="">
+                Select
+            </option>
+        </select>
+        <div data-montage-id="slider"></div>
     </div>
 </body>
 </html>
